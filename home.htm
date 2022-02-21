@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            line-height: 2;
+        }
+        
+        .top-header {
+            z-index: 10;
+            position: sticky;
+            top: 0px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient( to right, rgb(27, 1, 1), rgb(110, 3, 3));
+        }
+        
+        header img {
+            width: 150px;
+            height: 150px;
+            align-self: flex-end;
+        }
+        
+        header h1 {
+            position: relative;
+            animation: color1 5s infinite;
+            text-align: center;
+            display: inline-block;
+            margin: 20px;
+            padding-top: 10px;
+        }
+        
+        .text-primary {
+            font-size: 2rem;
+            position: relative;
+            left: 50px;
+            color: burlywood;
+            /* text-align: center; */
+            /* animation: mus-leta2 6s infinite; */
+        }
+        
+        .main {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background: black;
+            height: 100%;
+            color: white;
+        }
+        
+        .main audio {
+            display: flex;
+            text-align: center;
+            width: 400px;
+            align-self: center;
+        }
+        
+        .news {
+            text-align: center;
+            background: black;
+            color: white;
+        }
+        
+        .news h1 {
+            margin: 0px;
+        }
+        
+        .news video {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+        
+        @keyframes mus-leta2 {
+            0% {
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                color: yellow;
+            }
+            50% {
+                top: 0px;
+                bottom: 0px;
+                left: 350px;
+                right: 0px;
+                color: maroon;
+            }
+            100% {
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 3000px;
+                color: yellow;
+            }
+        }
+        
+        @keyframes color1 {
+            0% {}
+            50% {
+                color: teal;
+                transform: scale(2) translateY(-20px);
+            }
+        }
+        
+        @keyframes color2 {
+            0% {}
+            50% {
+                color: teal;
+                transform: scale(1.6) translateY(-10px);
+            }
+        }
+        
+        @media screen and (max-width:992px) and (min-width:300px) {
+            .top-header h1 {
+                font-size: 16px;
+                animation: color2 6s infinite;
+            }
+            .text-primary {
+                font-size: 18px;
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-header">
+        <img src="images.png" alt="">
+        <section class="s2">
+            <h1>best music there is in web </h1>
+            <br><span class="text-primary">MUS-LETA</span>
+        </section>
+        <img src="0d8998094517b1c484efb7606fdfd9d1.jpg" alt="">
+    </header>
+
+    <main class="main">
+        <h1>best musics in this month</h1>
+        <h3>music 1</h3>
+        <span>Addle_million years ago</span>
+        <audio src="Adele Million Years Ago.mp3" controls="controls" preload="metadata"></audio>
+
+
+        <h3>music 2</h3>
+        <span>13 horses</span>
+        <audio src="Alexander Rybak - 13 Horses.mp3" controls="controls" preload="metadata"></audio>
+
+
+        <h3>music 3</h3>
+        <span>Har kes gidar mi !</span>
+        <audio src="AUD-20201225-WA0004.mp3" controls="controls" preload="metadata"></audio>
+
+        <h3>music 4</h3>
+        <span>Erol_Evgin_ft_Sila_Ateşle_Oynama</span>
+        <audio src="Erol_Evgin_ft_Sila_Ateşle_Oynama.mp3" controls="controls" preload="metadata"></audio>
+
+
+        <h3>music 5</h3>
+        <span>Shahin najafi _roya</span>
+        <audio src="Shahin Najafi - Roya.mp3" controls="controls" preload="metadata"></audio>
+
+        <h3>music 6</h3>
+        <span>Shahin Najafi_Akharin Booseh</span>
+        <audio src="Shahin Najafi Akharin Booseh feat Babak Amini.mp3" controls="controls" preload="metadata"></audio>
+
+        <h3>music 7</h3>
+        <span>Shahin Najafi_Nazli</span>
+        <audio src="Shahin Najafi nazli.mp3" controls="controls" preload="metadata"></audio>
+
+
+        <h3>music 8</h3>
+        <span>Shahin Najafi_Hamoon</span>
+        <audio src="Shahin-Najafi-Hamoon-128.mp3" controls="controls" preload="metadata"></audio>
+
+
+    </main>
+    <section class="news">
+        <h1>
+            news
+        </h1>
+        <h4>
+            music video for : Gray-Moor one day
+        </h4>
+        <Video src="149e30300e52c725600746cb634ff70225136195-480p.mp4" controls="controls" preload="metadata"></Video>
+    </section>
+
+
+</body>
+
+</html>
